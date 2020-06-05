@@ -4,7 +4,7 @@ var port = 4000
 
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('Welcome askmas devops course 1\n')
+  response.end('Welcome askmas devops course 1\n Updated')
 })
 
 server.listen(port)
