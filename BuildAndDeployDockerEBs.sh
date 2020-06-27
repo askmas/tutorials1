@@ -19,6 +19,7 @@ EBS_DEPLOY='
 }'
 
 echo $EBS_DEPLOY > Dockerrun.aws.json
+export PATH=/root/.local/bin:$PATH
 eb init --region eu-west-1 --platform docker tutorials1-ebs 
 
 # EB_Action : create or deploy
